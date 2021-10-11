@@ -20,3 +20,4 @@ A nivell de disseny:
 - En arrencar l'aplicació des del main, s'injecta un DataSource volàtil, però és perfectament intercanviable amb un altre tips de DataSource (com un mysql) que s'hagi implementat.
 - He usat el meu propi Set, anomenat MySet, per tal d'afegir un mètode get(Object o) que el Set no incorpora. Aquest mètode ens permetrà implementar d'una manera més senzilla la gestió d'elements (usuaris, video i tags) repetits al DataSource.
 - L'aplicació combina Tui (Terminal User Interface) i Gui. Amb Tui hi ha implementats els menus i els formularis de creació de videos i tags, i amb Gui el feedback de pujada i verificació de vídeo i el reproductor de vídeos.
+- L'estat de pujada (uploading, verifying, uploaded) està implementat amb un enum, mentre que l'estat de reproducció (stopped, playing, paused) està implementat amb el patró State (usant un enum dins).
